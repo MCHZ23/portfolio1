@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    height: 100%;
+    background: #2a2b32;
+}
+
+a{
+    color: #ccc;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover{
+    color: #e91e63;
+}
+
+h1.header{
+    color: #e91e63;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+h2{
+    color: #616161;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+canvas{
+    height: 100vh;
+    z-index: -100000;
+    position: fixed;
+    top: 0px;
+}
+
+.mb{
+    margin-bottom: 3rem;
+}
+
+.logo{
+    font-family: 'Monoton', cursive;
+    color: #fff;
+    font-size: 10rem;
+}
+
+.links-list ul li{
+    list-style: none;
+    margin-right: 2rem;
+    font-size: 1.8rem;
+    margin-bottom: 0;
+}
+
+.links-list h1{
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.links-list ul li span{
+    background-color: #e91e63;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    padding: 3px 6px;
+    font-weight: bold;
+    margin-left: 0.5rem;
+    color: #fff;
+}
+
+.footer{
+    margin-top: 6rem;
+}
+
+.footer p{
+    color: #fff;
+    font-size: 1.3rem;
+}
+.button__stylee{
+    margin-top: -0.6em;
+}
+.fa-solid fa-angles-up{ 
+    color: #252A2E;
+}
+
+
+
+
+
+.hr__style{ 
+    width: 25%;
+    height: -2vh;
+    margin-top: 4.8em;
+    position: absolute;
+    margin-left: 2em;
+}
+.hr2__style{ 
+    width: 24%;
+    height: -2vh;
+    margin-top: 4.8em;
+    position: absolute;
+    right: 2em;
+}
+
+
+/* SECCION RESPONSIVE */
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+@media screen and (max-width:700px){
+    .sobremi .fila{
+        display: block;
+    }
+    .sobremi .fila .col{
+        width: fit-content;
+    }
+
+    .skills .fila{
+        display: block;
+    }
+    .skills .fila .col{
+        width: 100%;
+    }
+    .skills .fila .col .barra-skill{
+        width: 100%;
+    }
+
+    .curriculum .fila{
+        display: block;
+    }
+    .curriculum .fila .col{
+        width: 90%;
+    }
+    .curriculum .fila .derecha{
+        margin-left: 20px;
+    }
+
+    .portfolio .galeria{
+        display: block;
+        width: 100%;
+    }
+    .portfolio .galeria .proyecto{
+        max-width: 100%;
+    }
+    .portfolio .galeria .proyecto img{
+        width: 100%;
+    }
+    .contacto .fila{
+        display: block;
+    }
+    .contacto .fila .col{
+        width: 100%;
+    }
+}

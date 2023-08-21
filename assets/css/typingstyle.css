@@ -1,0 +1,83 @@
+
+.text{ 
+    font-size: 54px;
+}
+.text__style{ 
+    display: block;
+    white-space: nowrap;
+    border-right: 0px solid;
+    width: 25ch;
+    animation: typing 2s steps(12), blink .5s infinite step-end alternate;
+    overflow: hidden;
+    letter-spacing: 1px;
+    margin-left: -2.5em;
+}
+
+@keyframes typing {
+    from { width: 0 }
+}
+@keyframes blink { 
+    50% { border-color: transparent} 
+}
+
+
+.text2__style {
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 24px;
+    color: transparent; /* Inicialmente, el texto es transparente */
+    transition: color 0.8s; /* Transición de color para suavizar el cambio */
+    animation: appear 4s linear forwards, colorChange 9s linear forwards;
+}
+
+@keyframes appear {
+    0% {
+        width: 2;
+        opacity: 0;
+    }
+    100% {
+        width: auto;
+        opacity: 1;
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        color: transparent;
+    }
+    100% {
+        color: #ebc9b2; /* Cambia al color deseado */
+    }
+}
+
+
+
+
+.text3__style {
+    
+    white-space: nowrap;
+    font-size: 24px;
+    color: transparent; /* Inicialmente, el texto es transparente */
+    transition: color 0.8s; /* Transición de color para suavizar el cambio */
+    animation: appear 4s linear forwards, colorChange 9s linear forwards;
+}
+
+@keyframes appear {
+    0% {
+        width: 2;
+        opacity: 0;
+    }
+    100% {
+        width: auto;
+        opacity: 1;
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        color: transparent;
+    }
+    100% {
+        color: #ebc9b2; /* Cambia al color deseado */
+    }
+}
